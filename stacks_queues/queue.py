@@ -25,7 +25,6 @@ class Queue:
             In the store are occupied
             returns None
         """
-        pass
         if self.front == -1:
             self.front = 0
             self.rear = 0
@@ -41,9 +40,8 @@ class Queue:
             Raises a QueueEmptyException if 
             The Queue is empty.
         """
-        pass
         if self.size == 0:
-            raise QueueEmptyException
+            raise QueueEmptyException('Queue is empty')
 
         head = self.front
         element = self.store[head]
